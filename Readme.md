@@ -28,26 +28,17 @@ REST API для продуктового магазина, реализован�
 ***
 
 ## 1.1 Установка и запуск
+#### - копируйте репозиторий
 ```
-# копируйте репозиторий
 git clone https://github.com/goqwertys/grocery_store.git
 cd grocery_store
-
-# Установите зависимости
+```
+#### - Установите зависимости
+```
 pip install -r requirements.txt
-
-# Примените миграции
-python manage.py migrate
-
-# Создайте суперпользователя
-python manage.py createsuperuser
-
-# Запустите сервер
-python manage.py runserver
 ```
 
-Создайте `.env` файл и добавьте в него конфигурации:
-
+#### - Создайте файл `.env` с конфигурациями по образцу `.env.sample`.
 ```
 SECRET_KEY=your_secret_key
 DEBUG=True
@@ -58,6 +49,26 @@ DB_USER=db_user
 DB_PASSWORD=secret_password
 DB_HOST=localhost
 DB_PORT=
+```
+
+#### - Примените миграции
+```
+python manage.py migrate
+```
+
+
+#### - Создайте суперпользователя
+```
+python manage.py createsuperuser
+```
+
+#### - Запустите сервер
+```
+python manage.py runserver
+```
+#### - Загрузите данные из фикстур:
+```
+python manage.py loaddata categories.json subcategories.json products.json product_images.json
 ```
 ***
 
