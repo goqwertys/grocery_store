@@ -1,0 +1,102 @@
+[
+    {
+        "model": "store.subcategory",
+        "pk": 1,
+        "fields": {
+            "name": "Medicines",
+            "slug": "medicines",
+            "image": "",
+            "parent_category": 1
+        }
+    },
+    {
+        "model": "store.subcategory",
+        "pk": 2,
+        "fields": {
+            "name": "Food supplement",
+            "slug": "food-supplement",
+            "image": "",
+            "parent_category": 1
+        }
+    },
+    {
+        "model": "store.subcategory",
+        "pk": 4,
+        "fields": {
+            "name": "Citrus",
+            "slug": "citrus",
+            "image": "",
+            "parent_category": 3
+        }
+    },
+    {
+        "model": "store.subcategory",
+        "pk": 5,
+        "fields": {
+            "name": "Berries",
+            "slug": "berries",
+            "image": "",
+            "parent_category": 3
+        }
+    },
+    {
+        "model": "store.subcategory",
+        "pk": 6,
+        "fields": {
+            "name": "Leafy Greens",
+            "slug": "leafy-greens",
+            "image": "",
+            "parent_category": 4
+        }
+    },
+    {
+        "model": "store.subcategory",
+        "pk": 7,
+        "fields": {
+            "name": "Root Vegetables",
+            "slug": "root-vegetables",
+            "image": "",
+            "parent_category": 4
+        }
+    },
+    {
+        "model": "store.subcategory",
+        "pk": 8,
+        "fields": {
+            "name": "Milk",
+            "slug": "milk",
+            "image": "",
+            "parent_category": 5
+        }
+    },
+    {
+        "model": "store.subcategory",
+        "pk": 9,
+        "fields": {
+            "name": "Cheese",
+            "slug": "cheese",
+            "image": "",
+            "parent_category": 5
+        }
+    },
+    {
+        "model": "store.subcategory",
+        "pk": 10,
+        "fields": {
+            "name": "Bread",
+            "slug": "bread",
+            "image": "",
+            "parent_category": 6
+        }
+    },
+    {
+        "model": "store.subcategory",
+        "pk": 11,
+        "fields": {
+            "name": "Pastries",
+            "slug": "pastries",
+            "image": "",
+            "parent_category": 6
+        }
+    }
+]

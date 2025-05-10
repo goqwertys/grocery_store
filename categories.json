@@ -1,0 +1,56 @@
+[
+    {
+        "model": "store.category",
+        "pk": 1,
+        "fields": {
+            "name": "Pharmacy",
+            "slug": "pharmacy",
+            "image": ""
+        }
+    },
+    {
+        "model": "store.category",
+        "pk": 2,
+        "fields": {
+            "name": "Confectionery",
+            "slug": "confectionery",
+            "image": ""
+        }
+    },
+    {
+        "model": "store.category",
+        "pk": 3,
+        "fields": {
+            "name": "Fruits",
+            "slug": "fruits",
+            "image": ""
+        }
+    },
+    {
+        "model": "store.category",
+        "pk": 4,
+        "fields": {
+            "name": "Vegetables",
+            "slug": "vegetables",
+            "image": ""
+        }
+    },
+    {
+        "model": "store.category",
+        "pk": 5,
+        "fields": {
+            "name": "Dairy",
+            "slug": "dairy",
+            "image": ""
+        }
+    },
+    {
+        "model": "store.category",
+        "pk": 6,
+        "fields": {
+            "name": "Bakery",
+            "slug": "bakery",
+            "image": ""
+        }
+    }
+]
