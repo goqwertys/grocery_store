@@ -1,7 +1,14 @@
 from django.contrib import admin
 
-from store.models import Category, SubCategory, Product
+from store.models import Category, SubCategory, Product, ProductImage
 
+
+class ProductImageInline(admin.TabularInline):
+    model = ProductImage
+    extra = 0
+    max_num = 3
+    fields = ('image', 'size', )
+    readonly_fields = ()
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
@@ -19,3 +26,4 @@ class SubCategoryAdmin(admin.ModelAdmin):
 class ProductAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('name', )}
     list_display = ('name', 'slug', 'subcategory', 'price')
+    inlines = [ProductImageInline]
