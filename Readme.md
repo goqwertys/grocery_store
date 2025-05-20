@@ -38,7 +38,7 @@ cd grocery_store
 pip install -r requirements.txt
 ```
 
-#### - Создайте файл `.env` с конфигурациями по образцу `.env.sample`.
+#### - Создайте файл `.env` с конфигурациями по образцу `.env.sample`
 ```
 SECRET_KEY=your_secret_key
 DEBUG=True
@@ -50,7 +50,10 @@ DB_PASSWORD=secret_password
 DB_HOST=localhost
 DB_PORT=
 ```
-
+##### Секретный ключ можно сгенирировать командой:
+```
+python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
+```
 #### - Примените миграции
 ```
 python manage.py migrate
